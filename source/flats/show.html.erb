@@ -1,0 +1,59 @@
+---
+title: Flat description
+---
+<!-- Access data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+<!-- Inject flat data in template -->
+
+<div class="banner-flat">
+  <%= image_tag "https://kitt.lewagon.com/placeholder/cities/#{flat.city_slug}"%>
+</div>
+<div class="wrap-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="description">
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle img-card" %>
+          <div class="main-desc">
+            <h2><%= flat.name %></h2>
+            <p><%= flat.description %></p>
+            <h3 class="star">
+              <% (1..flat.rating).each do |star| %>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              <% end %>
+            </h3>
+            <h3><%= flat.city_name %></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="main-form">
+          <h3>Book the flat</h3>
+          <form action="">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="check-in">
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="check-out">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <select id="nb of guests" name="nb of guests" class="form-control">
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+              </select>
+            </div>
+            <input type="submit" value="SUBMIT" class="btn btn-primary btn-lg">
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.banner-flat img {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+  // background-size: cover !important;
+}
+
+.wrap-white {
+  background-color: white;
+}
+
+.description {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.main-form {
+  background-color: $light-gray;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.img-card {
+  height: 80px;
+  margin: 10px;
+}
+
+.main-desc {
+  padding: 10px;
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+.star {
+  color: $yellow;
+}
