@@ -1,10 +1,10 @@
 #home {
-  background-color: #D23333;
+  background-color: rgb(250,250,250);
   color: white;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  // height: 100vh;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-around;
   text-align: center;
   p {
     margin-top: 1.5em;
@@ -14,4 +14,9 @@
     font-weight: bold;
     font-size: 16px;
   }
+}
+
+.cards {
+  margin: 20px;
+  min-height: 500px;
 }

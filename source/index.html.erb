@@ -3,13 +3,49 @@ title: Le Wagon - Middleman
 ---
 
 <div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+
+  <%= partial "layouts/banner" %>
+
+  <div class="container">
+    <div class="cards">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <!-- insert <div class="card"> -->
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path 'http://kitt.lewagon.com/placeholder/cities/berlin'%>);">
+            <div class="card-category">Popular</div>
+            <div class="card-description">
+              <h2>BERLIN</h2>
+              <p>Your cool flat in Berlin</p>
+            </div>
+            <%= image_tag "cecile.png", class: "card-user" %>
+            <a class="card-link" href="#" ></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <!-- insert <div class="card"> -->
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path 'http://kitt.lewagon.com/placeholder/cities/berlin'%>);">
+            <div class="card-category">Popular</div>
+            <div class="card-description">
+              <h2>BERLIN</h2>
+              <p>Your cool flat in Berlin</p>
+            </div>
+            <%= image_tag "cecile.png", class: "card-user" %>
+            <a class="card-link" href="#" ></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <!-- insert <div class="card"> -->
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path 'http://kitt.lewagon.com/placeholder/cities/berlin'%>);">
+            <div class="card-category">Popular</div>
+            <div class="card-description">
+              <h2>BERLIN</h2>
+              <p>Your cool flat in Berlin</p>
+            </div>
+            <%= image_tag "cecile.png", class: "card-user" %>
+            <a class="card-link" href="#" ></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
